@@ -14,6 +14,7 @@
 		565E82661CEAA85500BF9017 /* CheikDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82651CEAA85500BF9017 /* CheikDemoTests.m */; };
 		565E82711CEAA85500BF9017 /* CheikDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82701CEAA85500BF9017 /* CheikDemoUITests.m */; };
 		565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */; };
+		565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		565E82721CEAA85500BF9017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDemoTableViewController.h; sourceTree = "<group>"; };
+		565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDemoTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,10 @@
 				565E824F1CEAA85500BF9017 /* AppDelegate.m */,
 				565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */,
 				565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */,
+				565E82811CEAB23F00BF9017 /* OC */,
+				565E82821CEAB23F00BF9017 /* OCDemo */,
+				565E82831CEAB23F00BF9017 /* Switf */,
+				565E82841CEAB23F00BF9017 /* SwitfDemo */,
 				565E82571CEAA85500BF9017 /* Assets.xcassets */,
 				565E82591CEAA85500BF9017 /* LaunchScreen.storyboard */,
 				565E825C1CEAA85500BF9017 /* Info.plist */,
@@ -135,6 +142,36 @@
 				565E82721CEAA85500BF9017 /* Info.plist */,
 			);
 			path = CheikDemoUITests;
+			sourceTree = "<group>";
+		};
+		565E82811CEAB23F00BF9017 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		565E82821CEAB23F00BF9017 /* OCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */,
+				565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */,
+			);
+			path = OCDemo;
+			sourceTree = "<group>";
+		};
+		565E82831CEAB23F00BF9017 /* Switf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Switf;
+			sourceTree = "<group>";
+		};
+		565E82841CEAB23F00BF9017 /* SwitfDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwitfDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */,
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
 				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
