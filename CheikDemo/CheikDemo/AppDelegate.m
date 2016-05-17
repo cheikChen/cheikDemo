@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSLog(@"启动程序:%@", launchOptions);
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    HomeTableViewController *homeVC = [[HomeTableViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVC];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

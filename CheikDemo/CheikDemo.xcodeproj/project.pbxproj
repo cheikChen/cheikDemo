@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		565E824D1CEAA85500BF9017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E824C1CEAA85500BF9017 /* main.m */; };
 		565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E824F1CEAA85500BF9017 /* AppDelegate.m */; };
-		565E82531CEAA85500BF9017 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82521CEAA85500BF9017 /* ViewController.m */; };
-		565E82561CEAA85500BF9017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E82541CEAA85500BF9017 /* Main.storyboard */; };
 		565E82581CEAA85500BF9017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565E82571CEAA85500BF9017 /* Assets.xcassets */; };
 		565E825B1CEAA85500BF9017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565E82591CEAA85500BF9017 /* LaunchScreen.storyboard */; };
 		565E82661CEAA85500BF9017 /* CheikDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82651CEAA85500BF9017 /* CheikDemoTests.m */; };
 		565E82711CEAA85500BF9017 /* CheikDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82701CEAA85500BF9017 /* CheikDemoUITests.m */; };
+		565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		565E824C1CEAA85500BF9017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		565E824E1CEAA85500BF9017 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		565E824F1CEAA85500BF9017 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		565E82511CEAA85500BF9017 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		565E82521CEAA85500BF9017 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		565E82551CEAA85500BF9017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		565E82571CEAA85500BF9017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565E825A1CEAA85500BF9017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565E825C1CEAA85500BF9017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		565E826C1CEAA85500BF9017 /* CheikDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheikDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565E82701CEAA85500BF9017 /* CheikDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheikDemoUITests.m; sourceTree = "<group>"; };
 		565E82721CEAA85500BF9017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +101,8 @@
 			children = (
 				565E824E1CEAA85500BF9017 /* AppDelegate.h */,
 				565E824F1CEAA85500BF9017 /* AppDelegate.m */,
-				565E82511CEAA85500BF9017 /* ViewController.h */,
-				565E82521CEAA85500BF9017 /* ViewController.m */,
-				565E82541CEAA85500BF9017 /* Main.storyboard */,
+				565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */,
+				565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */,
 				565E82571CEAA85500BF9017 /* Assets.xcassets */,
 				565E82591CEAA85500BF9017 /* LaunchScreen.storyboard */,
 				565E825C1CEAA85500BF9017 /* Info.plist */,
@@ -245,7 +242,6 @@
 			files = (
 				565E825B1CEAA85500BF9017 /* LaunchScreen.storyboard in Resources */,
 				565E82581CEAA85500BF9017 /* Assets.xcassets in Resources */,
-				565E82561CEAA85500BF9017 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565E82531CEAA85500BF9017 /* ViewController.m in Sources */,
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
+				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		565E82541CEAA85500BF9017 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				565E82551CEAA85500BF9017 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		565E82591CEAA85500BF9017 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,8 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheikDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2.CheikDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,8 +414,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheikDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2.CheikDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
