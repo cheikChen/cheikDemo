@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564E5F751CEAFC4300CA95A9 /* MediaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564E5F721CEAFC4300CA95A9 /* MediaTableViewController.m */; };
+		564E5F761CEAFC4300CA95A9 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564E5F741CEAFC4300CA95A9 /* MusicViewController.m */; };
+		564E5F791CEAFC6C00CA95A9 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564E5F781CEAFC6C00CA95A9 /* RecordViewController.m */; };
 		565E824D1CEAA85500BF9017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E824C1CEAA85500BF9017 /* main.m */; };
 		565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E824F1CEAA85500BF9017 /* AppDelegate.m */; };
 		565E82581CEAA85500BF9017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565E82571CEAA85500BF9017 /* Assets.xcassets */; };
@@ -15,9 +18,7 @@
 		565E82711CEAA85500BF9017 /* CheikDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82701CEAA85500BF9017 /* CheikDemoUITests.m */; };
 		565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */; };
 		565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */; };
-		565E828A1CEABD5200BF9017 /* MediaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82891CEABD5200BF9017 /* MediaTableViewController.m */; };
 		565E828D1CEAC29B00BF9017 /* up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 565E828C1CEAC29B00BF9017 /* up.wav */; };
-		565E82901CEAC36F00BF9017 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E828F1CEAC36F00BF9017 /* MusicViewController.m */; };
 		565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		564E5F711CEAFC4300CA95A9 /* MediaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewController.h; sourceTree = "<group>"; };
+		564E5F721CEAFC4300CA95A9 /* MediaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewController.m; sourceTree = "<group>"; };
+		564E5F731CEAFC4300CA95A9 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		564E5F741CEAFC4300CA95A9 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		564E5F771CEAFC6C00CA95A9 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		564E5F781CEAFC6C00CA95A9 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		565E82481CEAA85500BF9017 /* CheikDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheikDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565E824C1CEAA85500BF9017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		565E824E1CEAA85500BF9017 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,11 +63,7 @@
 		565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDemoTableViewController.h; sourceTree = "<group>"; };
 		565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDemoTableViewController.m; sourceTree = "<group>"; };
-		565E82881CEABD5200BF9017 /* MediaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewController.h; sourceTree = "<group>"; };
-		565E82891CEABD5200BF9017 /* MediaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewController.m; sourceTree = "<group>"; };
 		565E828C1CEAC29B00BF9017 /* up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = up.wav; sourceTree = "<group>"; };
-		565E828E1CEAC36F00BF9017 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
-		565E828F1CEAC36F00BF9017 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原来你也在这里-刘若英.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		564E5F701CEAFC4300CA95A9 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				564E5F711CEAFC4300CA95A9 /* MediaTableViewController.h */,
+				564E5F721CEAFC4300CA95A9 /* MediaTableViewController.m */,
+				564E5F731CEAFC4300CA95A9 /* MusicViewController.h */,
+				564E5F741CEAFC4300CA95A9 /* MusicViewController.m */,
+				564E5F771CEAFC6C00CA95A9 /* RecordViewController.h */,
+				564E5F781CEAFC6C00CA95A9 /* RecordViewController.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		565E823F1CEAA85500BF9017 = {
 			isa = PBXGroup;
 			children = (
@@ -167,10 +183,7 @@
 			children = (
 				565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */,
 				565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */,
-				565E82881CEABD5200BF9017 /* MediaTableViewController.h */,
-				565E82891CEABD5200BF9017 /* MediaTableViewController.m */,
-				565E828E1CEAC36F00BF9017 /* MusicViewController.h */,
-				565E828F1CEAC36F00BF9017 /* MusicViewController.m */,
+				564E5F701CEAFC4300CA95A9 /* Media */,
 			);
 			path = OCDemo;
 			sourceTree = "<group>";
@@ -329,12 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565E82901CEAC36F00BF9017 /* MusicViewController.m in Sources */,
+				564E5F761CEAFC4300CA95A9 /* MusicViewController.m in Sources */,
+				564E5F751CEAFC4300CA95A9 /* MediaTableViewController.m in Sources */,
 				565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */,
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
 				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
+				564E5F791CEAFC6C00CA95A9 /* RecordViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
-				565E828A1CEABD5200BF9017 /* MediaTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +566,7 @@
 				565E82771CEAA85500BF9017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		565E82781CEAA85500BF9017 /* Build configuration list for PBXNativeTarget "CheikDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +575,7 @@
 				565E827A1CEAA85500BF9017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		565E827B1CEAA85500BF9017 /* Build configuration list for PBXNativeTarget "CheikDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +584,7 @@
 				565E827D1CEAA85500BF9017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

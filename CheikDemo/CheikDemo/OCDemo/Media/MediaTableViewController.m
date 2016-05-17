@@ -9,6 +9,7 @@
 #import "MediaTableViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "MusicViewController.h"
+#import "RecordViewController.h"
 @interface MediaTableViewController ()
 {
     NSMutableArray *dataArray_;
@@ -42,7 +43,6 @@
     
     [dataArray_ addObject:@"音效"];
     [dataArray_ addObject:@"音乐"];
-    [dataArray_ addObject:@"音频回话"];
     [dataArray_ addObject:@"录音"];
     [dataArray_ addObject:@"音频队列服务"];
 }
@@ -73,6 +73,12 @@
         {
             MusicViewController *music = [[MusicViewController alloc]init];
             [self.navigationController pushViewController:music animated:YES];
+        }
+            break;
+        case 2:
+        {
+            RecordViewController *record = [[RecordViewController alloc]init];
+            [self.navigationController pushViewController:record animated:YES];
         }
             break;
         default:

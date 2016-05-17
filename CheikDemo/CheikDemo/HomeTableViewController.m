@@ -28,9 +28,9 @@
 
 -(void)getData{
 
-    [dataArray_ addObject:@"OC语法"];
+//    [dataArray_ addObject:@"OC语法"];
     [dataArray_ addObject:@"OCdemo"];
-    [dataArray_ addObject:@"Switf语法"];
+//    [dataArray_ addObject:@"Switf语法"];
     [dataArray_ addObject:@"SwiftDemo"];
 }
 
@@ -53,9 +53,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
-            
-            break;
-        case 1:
         {
             OCDemoTableViewController *ocDemo = [[OCDemoTableViewController alloc]init];
             [self.navigationController pushViewController:ocDemo animated:YES];

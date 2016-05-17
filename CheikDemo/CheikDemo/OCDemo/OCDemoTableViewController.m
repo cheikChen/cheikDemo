@@ -26,9 +26,9 @@
 -(void)getData{
     
     [dataArray_ addObject:@"音频播放、录音、视频播放、拍照、视频录制"];
-    [dataArray_ addObject:@"OCdemo"];
-    [dataArray_ addObject:@"Switf语法"];
-    [dataArray_ addObject:@"SwiftDemo"];
+//    [dataArray_ addObject:@"OCdemo"];
+//    [dataArray_ addObject:@"Switf语法"];
+//    [dataArray_ addObject:@"SwiftDemo"];
 }
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

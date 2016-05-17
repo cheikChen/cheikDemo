@@ -6,6 +6,10 @@
 //  Copyright © 2016年 cheik. All rights reserved.
 //
 
+
+/**
+ *  音乐播放
+ */
 #import <UIKit/UIKit.h>
 
 @interface MusicViewController : UIViewController
