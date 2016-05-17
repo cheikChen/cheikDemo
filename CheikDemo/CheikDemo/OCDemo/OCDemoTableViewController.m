@@ -7,6 +7,7 @@
 //
 
 #import "OCDemoTableViewController.h"
+#import "MediaTableViewController.h"
 
 @interface OCDemoTableViewController ()
 {
@@ -24,7 +25,7 @@
 }
 -(void)getData{
     
-    [dataArray_ addObject:@"OC语法"];
+    [dataArray_ addObject:@"音频播放、录音、视频播放、拍照、视频录制"];
     [dataArray_ addObject:@"OCdemo"];
     [dataArray_ addObject:@"Switf语法"];
     [dataArray_ addObject:@"SwiftDemo"];
@@ -42,9 +43,21 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     }
     cell.textLabel.text = dataArray_[indexPath.row];
-
-    
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            MediaTableViewController *media = [[MediaTableViewController alloc]init];
+            [self.navigationController pushViewController:media animated:YES];
+        }
+        break;
+            
+        default:
+            break;
+    }
 }
 
 @end

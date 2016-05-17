@@ -15,6 +15,10 @@
 		565E82711CEAA85500BF9017 /* CheikDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82701CEAA85500BF9017 /* CheikDemoUITests.m */; };
 		565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */; };
 		565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */; };
+		565E828A1CEABD5200BF9017 /* MediaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82891CEABD5200BF9017 /* MediaTableViewController.m */; };
+		565E828D1CEAC29B00BF9017 /* up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 565E828C1CEAC29B00BF9017 /* up.wav */; };
+		565E82901CEAC36F00BF9017 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E828F1CEAC36F00BF9017 /* MusicViewController.m */; };
+		565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,12 @@
 		565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDemoTableViewController.h; sourceTree = "<group>"; };
 		565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDemoTableViewController.m; sourceTree = "<group>"; };
+		565E82881CEABD5200BF9017 /* MediaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewController.h; sourceTree = "<group>"; };
+		565E82891CEABD5200BF9017 /* MediaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewController.m; sourceTree = "<group>"; };
+		565E828C1CEAC29B00BF9017 /* up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = up.wav; sourceTree = "<group>"; };
+		565E828E1CEAC36F00BF9017 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		565E828F1CEAC36F00BF9017 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原来你也在这里-刘若英.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 		565E824A1CEAA85500BF9017 /* CheikDemo */ = {
 			isa = PBXGroup;
 			children = (
+				565E828B1CEAC27900BF9017 /* resource */,
 				565E824E1CEAA85500BF9017 /* AppDelegate.h */,
 				565E824F1CEAA85500BF9017 /* AppDelegate.m */,
 				565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */,
@@ -156,6 +167,10 @@
 			children = (
 				565E82851CEAB29000BF9017 /* OCDemoTableViewController.h */,
 				565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */,
+				565E82881CEABD5200BF9017 /* MediaTableViewController.h */,
+				565E82891CEABD5200BF9017 /* MediaTableViewController.m */,
+				565E828E1CEAC36F00BF9017 /* MusicViewController.h */,
+				565E828F1CEAC36F00BF9017 /* MusicViewController.m */,
 			);
 			path = OCDemo;
 			sourceTree = "<group>";
@@ -172,6 +187,15 @@
 			children = (
 			);
 			path = SwitfDemo;
+			sourceTree = "<group>";
+		};
+		565E828B1CEAC27900BF9017 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */,
+				565E828C1CEAC29B00BF9017 /* up.wav */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */,
 				565E825B1CEAA85500BF9017 /* LaunchScreen.storyboard in Resources */,
+				565E828D1CEAC29B00BF9017 /* up.wav in Resources */,
 				565E82581CEAA85500BF9017 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,10 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E82901CEAC36F00BF9017 /* MusicViewController.m in Sources */,
 				565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */,
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
 				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
+				565E828A1CEABD5200BF9017 /* MediaTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

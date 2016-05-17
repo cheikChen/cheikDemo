@@ -20,6 +20,12 @@
     NSLog(@"启动程序:%@", launchOptions);
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    //设置全局导航条风格和颜色
+     UINavigationBar *navigationBar=[UINavigationBar appearance];
+    [navigationBar setBarTintColor:[UIColor darkGrayColor]];
+    [navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
     HomeTableViewController *homeVC = [[HomeTableViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     self.window.rootViewController = nav;
