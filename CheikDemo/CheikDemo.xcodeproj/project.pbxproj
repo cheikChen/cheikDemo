@@ -20,6 +20,8 @@
 		565E82871CEAB29000BF9017 /* OCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */; };
 		565E828D1CEAC29B00BF9017 /* up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 565E828C1CEAC29B00BF9017 /* up.wav */; };
 		565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */; };
+		56E985B51CEB0E58000E0BB0 /* FSAudioStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */; };
+		F0AEDCEE4BBEC12C92DDAF8B /* Pods_CheikDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67AE0E4C3AFA54661A63B08 /* Pods_CheikDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,11 @@
 		565E82861CEAB29000BF9017 /* OCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDemoTableViewController.m; sourceTree = "<group>"; };
 		565E828C1CEAC29B00BF9017 /* up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = up.wav; sourceTree = "<group>"; };
 		565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原来你也在这里-刘若英.mp3"; sourceTree = "<group>"; };
+		56E985B31CEB0E58000E0BB0 /* FSAudioStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioStreamViewController.h; sourceTree = "<group>"; };
+		56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAudioStreamViewController.m; sourceTree = "<group>"; };
+		A6EBC4F2579388898EAF6009 /* Pods-CheikDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheikDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E67AE0E4C3AFA54661A63B08 /* Pods_CheikDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheikDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A4A9ADDA127F6C84CBE72B /* Pods-CheikDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheikDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0AEDCEE4BBEC12C92DDAF8B /* Pods_CheikDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +109,8 @@
 				564E5F741CEAFC4300CA95A9 /* MusicViewController.m */,
 				564E5F771CEAFC6C00CA95A9 /* RecordViewController.h */,
 				564E5F781CEAFC6C00CA95A9 /* RecordViewController.m */,
+				56E985B31CEB0E58000E0BB0 /* FSAudioStreamViewController.h */,
+				56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -112,6 +122,8 @@
 				565E82641CEAA85500BF9017 /* CheikDemoTests */,
 				565E826F1CEAA85500BF9017 /* CheikDemoUITests */,
 				565E82491CEAA85500BF9017 /* Products */,
+				7C32CBE6D28AB7C9EAC02FE5 /* Pods */,
+				7B8AA8D67B3211D268D93DA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,9 +145,7 @@
 				565E824F1CEAA85500BF9017 /* AppDelegate.m */,
 				565E827E1CEAAC3F00BF9017 /* HomeTableViewController.h */,
 				565E827F1CEAAC3F00BF9017 /* HomeTableViewController.m */,
-				565E82811CEAB23F00BF9017 /* OC */,
 				565E82821CEAB23F00BF9017 /* OCDemo */,
-				565E82831CEAB23F00BF9017 /* Switf */,
 				565E82841CEAB23F00BF9017 /* SwitfDemo */,
 				565E82571CEAA85500BF9017 /* Assets.xcassets */,
 				565E82591CEAA85500BF9017 /* LaunchScreen.storyboard */,
@@ -171,13 +181,6 @@
 			path = CheikDemoUITests;
 			sourceTree = "<group>";
 		};
-		565E82811CEAB23F00BF9017 /* OC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OC;
-			sourceTree = "<group>";
-		};
 		565E82821CEAB23F00BF9017 /* OCDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,13 +189,6 @@
 				564E5F701CEAFC4300CA95A9 /* Media */,
 			);
 			path = OCDemo;
-			sourceTree = "<group>";
-		};
-		565E82831CEAB23F00BF9017 /* Switf */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Switf;
 			sourceTree = "<group>";
 		};
 		565E82841CEAB23F00BF9017 /* SwitfDemo */ = {
@@ -211,6 +207,23 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		7B8AA8D67B3211D268D93DA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E67AE0E4C3AFA54661A63B08 /* Pods_CheikDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C32CBE6D28AB7C9EAC02FE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A4A9ADDA127F6C84CBE72B /* Pods-CheikDemo.debug.xcconfig */,
+				A6EBC4F2579388898EAF6009 /* Pods-CheikDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 565E82751CEAA85500BF9017 /* Build configuration list for PBXNativeTarget "CheikDemo" */;
 			buildPhases = (
+				513C6234F9F16282CA93995D /* Check Pods Manifest.lock */,
 				565E82441CEAA85500BF9017 /* Sources */,
 				565E82451CEAA85500BF9017 /* Frameworks */,
 				565E82461CEAA85500BF9017 /* Resources */,
+				03AC33A8ADA5C3B7C6EDAB69 /* Embed Pods Frameworks */,
+				C2B1C0A0A4033A5EA168C5E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,6 +353,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03AC33A8ADA5C3B7C6EDAB69 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		513C6234F9F16282CA93995D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B1C0A0A4033A5EA168C5E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		565E82441CEAA85500BF9017 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -348,6 +412,7 @@
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
 				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
 				564E5F791CEAFC6C00CA95A9 /* RecordViewController.m in Sources */,
+				56E985B51CEB0E58000E0BB0 /* FSAudioStreamViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,10 +544,11 @@
 		};
 		565E82761CEAA85500BF9017 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A4A9ADDA127F6C84CBE72B /* Pods-CheikDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheikDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,10 +557,11 @@
 		};
 		565E82771CEAA85500BF9017 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EBC4F2579388898EAF6009 /* Pods-CheikDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheikDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gwfx.gts2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

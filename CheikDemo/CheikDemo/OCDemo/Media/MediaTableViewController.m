@@ -10,6 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "MusicViewController.h"
 #import "RecordViewController.h"
+#import "FSAudioStreamViewController.h"
 @interface MediaTableViewController ()
 {
     NSMutableArray *dataArray_;
@@ -79,6 +80,12 @@
         {
             RecordViewController *record = [[RecordViewController alloc]init];
             [self.navigationController pushViewController:record animated:YES];
+        }
+            break;
+        case 3:
+        {
+            FSAudioStreamViewController *fsa = [[FSAudioStreamViewController alloc]init];
+            [self.navigationController pushViewController:fsa animated:YES];
         }
             break;
         default:

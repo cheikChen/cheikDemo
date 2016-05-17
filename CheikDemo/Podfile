@@ -1,1 +1,8 @@
-platform :ios
+platform :ios, '8.0'
+use_frameworks!
+
+target 'CheikDemo' do
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'FreeStreamer', '~> 3.5.6'
+end
+
