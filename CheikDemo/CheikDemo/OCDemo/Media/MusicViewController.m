@@ -6,25 +6,21 @@
 //  Copyright © 2016年 cheik. All rights reserved.
 //
 
-#import "MusicViewController.h"
-#import <AVFoundation/AVFoundation.h>
+/*
+ 音频
+ 在iOS中音频播放从形式上可以分为音效播放和音乐播放。前者主要指的是一些短音频播放，通常作为点缀音频，对于这类音频不需要进行进度、循环等控制。后者指的是一些较长的音频，通常是主音频，对于这些音频的播放通常需要进行精确的控制。在iOS中播放两类音频分别使用AudioToolbox.framework和AVFoundation.framework来完成音效和音乐播放。
+ 音效
+ AudioToolbox.framework是一套基于C语言的框架，使用它来播放音效其本质是将短音频注册到系统声音服务（System Sound Service）。System Sound Service是一种简单、底层的声音播放服务，但是它本身也存在着一些限制：
+ 音频播放时间不能超过30s
+ 数据必须是PCM或者IMA4格式
+ 音频文件必须打包成.caf、.aif、.wav中的一种（注意这是官方文档的说法，实际测试发现一些.mp3也可以播放）
+ 使用System Sound Service 播放音效的步骤如下：
+ 调用AudioServicesCreateSystemSoundID(   CFURLRef  inFileURL, SystemSoundID*   outSystemSoundID)函数获得系统声音ID。
+ 如果需要监听播放完成操作，则使用AudioServicesAddSystemSoundCompletion(  SystemSoundID inSystemSoundID,
+ CFRunLoopRef  inRunLoop, CFStringRef  inRunLoopMode, AudioServicesSystemSoundCompletionProc  inCompletionRoutine, void*  inClientData)方法注册回调函数。
+ 调用AudioServicesPlaySystemSound(SystemSoundID inSystemSoundID) 或者AudioServicesPlayAlertSound(SystemSoundID inSystemSoundID) 方法播放音效（后者带有震动效果）。
+ */
 
-#define kMusicFile @"原来你也在这里-刘若英.mp3"
-#define kMusicSinger @"刘若英"
-#define kMusicTitle @"原来你也在这里"
-
-@interface MusicViewController ()<AVAudioPlayerDelegate>
-@property (nonatomic,strong)UIImageView *backImageView;//背景图片
-@property (nonatomic,strong) AVAudioPlayer *audioPlayer;//播放器
-@property (strong, nonatomic) UILabel *controlPanel; //控制面板
-@property (strong, nonatomic) UIProgressView *playProgress;//播放进度
-@property (strong, nonatomic) UILabel *musicSinger; //演唱者
-@property (strong, nonatomic) UIButton *playOrPause; //播放/暂停按钮(如果tag为0认为是暂停状态，1是播放状态)
-
-@property (weak ,nonatomic) NSTimer *timer;//进度更新定时器
-@end
-
-@implementation MusicViewController
 /*
  音乐
  如果播放较大的音频或者要对音频有精确的控制则System Sound Service可能就很难满足实际需求了，通常这种情况会选择使用AVFoundation.framework中的AVAudioPlayer来实现。AVAudioPlayer可以看成一个播放器，它支持多种音频格式，而且能够进行进度、音量、播放速度等控制。首先简单看一下AVAudioPlayer常用的属性和方法：
@@ -63,6 +59,26 @@
  设置播放器属性，例如重复次数、音量大小等。
  调用play方法播放。
  */
+
+#import "MusicViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
+#define kMusicFile @"原来你也在这里-刘若英.mp3"
+#define kMusicSinger @"刘若英"
+#define kMusicTitle @"原来你也在这里"
+
+@interface MusicViewController ()<AVAudioPlayerDelegate>
+@property (nonatomic,strong)UIImageView *backImageView;//背景图片
+@property (nonatomic,strong) AVAudioPlayer *audioPlayer;//播放器
+@property (strong, nonatomic) UILabel *controlPanel; //控制面板
+@property (strong, nonatomic) UIProgressView *playProgress;//播放进度
+@property (strong, nonatomic) UILabel *musicSinger; //演唱者
+@property (strong, nonatomic) UIButton *playOrPause; //播放/暂停按钮(如果tag为0认为是暂停状态，1是播放状态)
+
+@property (weak ,nonatomic) NSTimer *timer;//进度更新定时器
+@end
+
+@implementation MusicViewController
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

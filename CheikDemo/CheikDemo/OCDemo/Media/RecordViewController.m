@@ -5,27 +5,6 @@
 //  Created by Cheik.chen on 16/5/17.
 //  Copyright © 2016年 cheik. All rights reserved.
 //
-
-#import "RecordViewController.h"
-#import <AVFoundation/AVFoundation.h>
-
-#define kRecordAudioFile @"myRecord.caf"
-
-@interface RecordViewController ()<AVAudioRecorderDelegate>
-@property (nonatomic,strong) AVAudioRecorder *audioRecorder;//音频录音机
-@property (nonatomic,strong) AVAudioPlayer *audioPlayer;//音频播放器，用于播放录音文件
-@property (nonatomic,strong) NSTimer *timer;//录音声波监控（注意这里暂时不对播放进行监控）
-
-@property (strong, nonatomic)  UIButton *record;//开始录音
-@property (strong, nonatomic)  UIButton *pause;//暂停录音
-@property (strong, nonatomic)  UIButton *resume;//恢复录音
-@property (strong, nonatomic)  UIButton *stop;//停止录音
-@property (strong, nonatomic)  UIProgressView *audioPower;//音频波动
-@property (nonatomic, strong)  UIImageView *backImageView;//背景图片
-@end
-
-@implementation RecordViewController
-
 /*
  录音
  除了上面说的，在AVFoundation框架中还要一个AVAudioRecorder类专门处理录音操作，它同样支持多种音频格式。与AVAudioPlayer类似，你完全可以将它看成是一个录音机控制类，下面是常用的属性和方法：
@@ -67,6 +46,27 @@
  创建一个定时器以便实时刷新录音测量值并更新录音强度到UIProgressView中显示。
  添加录音、暂停、恢复、停止操作，需要注意录音的恢复操作其实是有音频会话管理的，恢复时只要再次调用record方法即可，无需手动管理恢复时间等。
  */
+
+#import "RecordViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
+#define kRecordAudioFile @"myRecord.caf"
+
+@interface RecordViewController ()<AVAudioRecorderDelegate>
+@property (nonatomic,strong) AVAudioRecorder *audioRecorder;//音频录音机
+@property (nonatomic,strong) AVAudioPlayer *audioPlayer;//音频播放器，用于播放录音文件
+@property (nonatomic,strong) NSTimer *timer;//录音声波监控（注意这里暂时不对播放进行监控）
+
+@property (strong, nonatomic)  UIButton *record;//开始录音
+@property (strong, nonatomic)  UIButton *pause;//暂停录音
+@property (strong, nonatomic)  UIButton *resume;//恢复录音
+@property (strong, nonatomic)  UIButton *stop;//停止录音
+@property (strong, nonatomic)  UIProgressView *audioPower;//音频波动
+@property (nonatomic, strong)  UIImageView *backImageView;//背景图片
+@end
+
+@implementation RecordViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];

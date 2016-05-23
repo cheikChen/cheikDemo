@@ -21,6 +21,8 @@
 		565E828D1CEAC29B00BF9017 /* up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 565E828C1CEAC29B00BF9017 /* up.wav */; };
 		565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */; };
 		56E985B51CEB0E58000E0BB0 /* FSAudioStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */; };
+		56E985B81CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E985B71CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.m */; };
+		56E985BC1CF2EC61000E0BB0 /* 小视屏.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 56E985BB1CF2EC61000E0BB0 /* 小视屏.mp4 */; };
 		F0AEDCEE4BBEC12C92DDAF8B /* Pods_CheikDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67AE0E4C3AFA54661A63B08 /* Pods_CheikDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,9 @@
 		565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "原来你也在这里-刘若英.mp3"; sourceTree = "<group>"; };
 		56E985B31CEB0E58000E0BB0 /* FSAudioStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioStreamViewController.h; sourceTree = "<group>"; };
 		56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAudioStreamViewController.m; sourceTree = "<group>"; };
+		56E985B61CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerControllerViewController.h; sourceTree = "<group>"; };
+		56E985B71CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerControllerViewController.m; sourceTree = "<group>"; };
+		56E985BB1CF2EC61000E0BB0 /* 小视屏.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小视屏.mp4"; sourceTree = "<group>"; };
 		A6EBC4F2579388898EAF6009 /* Pods-CheikDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheikDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E67AE0E4C3AFA54661A63B08 /* Pods_CheikDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheikDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A4A9ADDA127F6C84CBE72B /* Pods-CheikDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheikDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheikDemo/Pods-CheikDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +116,8 @@
 				564E5F781CEAFC6C00CA95A9 /* RecordViewController.m */,
 				56E985B31CEB0E58000E0BB0 /* FSAudioStreamViewController.h */,
 				56E985B41CEB0E58000E0BB0 /* FSAudioStreamViewController.m */,
+				56E985B61CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.h */,
+				56E985B71CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 		565E828B1CEAC27900BF9017 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				56E985BB1CF2EC61000E0BB0 /* 小视屏.mp4 */,
 				565E82931CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 */,
 				565E828C1CEAC29B00BF9017 /* up.wav */,
 			);
@@ -330,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E985BC1CF2EC61000E0BB0 /* 小视屏.mp4 in Resources */,
 				565E82941CEAE58700BF9017 /* 原来你也在这里-刘若英.mp3 in Resources */,
 				565E825B1CEAA85500BF9017 /* LaunchScreen.storyboard in Resources */,
 				565E828D1CEAC29B00BF9017 /* up.wav in Resources */,
@@ -412,6 +421,7 @@
 				565E82501CEAA85500BF9017 /* AppDelegate.m in Sources */,
 				565E82801CEAAC3F00BF9017 /* HomeTableViewController.m in Sources */,
 				564E5F791CEAFC6C00CA95A9 /* RecordViewController.m in Sources */,
+				56E985B81CF2E4E9000E0BB0 /* MoviePlayerControllerViewController.m in Sources */,
 				56E985B51CEB0E58000E0BB0 /* FSAudioStreamViewController.m in Sources */,
 				565E824D1CEAA85500BF9017 /* main.m in Sources */,
 			);
